@@ -10,19 +10,28 @@ export function TaskList() {
   const sortedTasks = [...tasks].sort((a, b) => Number(b.completed) - Number(a.completed));
 
   return (
-    <div className="bg-greenLogo h-[500px] w-[1000px] rounded-2xl p-4 overflow-y-auto">
+    <div className="bg-greenLogo h-[680px] w-[500px] rounded-2xl p-4 mr-4 justify-start items-center flex flex-col">
+      <h1 className="text-2xl font-semibold text-white">Lista de Tarefas</h1>
+      <div className='flex justify-between w-full text-white font-semibold text-sm pb-6 pt-8'>
+        <h1>Tarefas</h1>
+        <div className='flex justify-between gap-2'>
+          <h1>Concluir</h1>
+          <h2>Editar</h2>
+          <h3>Deletar</h3>
+        </div>
+      </div>
       {sortedTasks.length > 0 ? (
         sortedTasks.map(task => (
-          <div key={task.id} className="flex justify-between items-center mb-2">
+          <div key={task.id} className="flex justify-between w-full items-center mb-2">
             <div className="flex items-center">
               <span
-                className={`flex-1 text-white cursor-pointer ${task.completed ? '' : ''}`}
+                className={`flex-1 text-white font-light cursor-pointer ${task.completed ? '' : ''}`}
                 onClick={() => toggleTaskCompletion(task.id)}
               >
                 {task.title}
               </span>
             </div>
-            <div className='flex gap-2'>
+            <div className='flex gap-6'>
               <input
                 type="checkbox"
                 checked={task.completed}
