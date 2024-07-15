@@ -10,7 +10,7 @@ export function TaskList() {
   const sortedTasks = [...tasks].sort((a, b) => Number(b.completed) - Number(a.completed));
 
   return (
-    <div className="bg-greenLogo h-[500px] w-[700px] rounded-2xl p-4 overflow-y-auto">
+    <div className="bg-greenLogo h-[500px] w-[1000px] rounded-2xl p-4 overflow-y-auto">
       {sortedTasks.length > 0 ? (
         sortedTasks.map(task => (
           <div key={task.id} className="flex justify-between items-center mb-2">

@@ -19,7 +19,7 @@ export function AddTask() {
   };
 
   return (
-    <div className='w-[700px] h-[400px] bg-greenLogo rounded-xl flex flex-col items-center justify-start p-10'>
+    <div className='w-[1000px] h-[400px] bg-greenLogo rounded-xl flex flex-col items-center justify-start p-10'>
       <img alt='logo' src={Logo} className='w-[120px] mb-10' />
       <div className="flex flex-col gap-4 items-center">
         <h1 className="text-2xl font-semibold text-white">Adicionar nova Tarefa</h1>
