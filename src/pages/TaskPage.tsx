@@ -7,7 +7,7 @@ export function TaskPage() {
   return (
     <>
       <SideBar />
-      <div className="bg-bluePrimary w-full h-screen flex flex-col gap-4 items-center justify-center">
+      <div className="bg-gray-200 w-full h-screen flex flex-col gap-4 items-center justify-center">
         <AddTask />
         <TaskList />
       </div>
