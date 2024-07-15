@@ -42,14 +42,8 @@ export function SideBar() {
                     </button>
                 </div>
                 {isOpen && (
-                    <div className="absolute w-[200px] items-center text-center flex flex-col py-8 gap-4 mt-2 bg-white border rounded shadow-xl">
+                    <div className="absolute w-[120px] items-center text-center flex flex-col py-8 gap-4 mt-2 bg-white border rounded-b-lg ml-2 shadow-xl">
                         <img alt='logo' src={Logo} className='w-[60px]' />
-                        <a href="/add" className="font-medium text-lg hover:text-yellow-custom">
-                            Adicionar Tarefas
-                        </a>  
-                        <a href="/list" className="font-medium text-lg hover:text-yellow-custom">
-                            Lista de Tarefas
-                        </a> 
                         <a href="/" className="font-medium text-lg hover:text-yellow-custom">
                             Sair
                         </a>   
