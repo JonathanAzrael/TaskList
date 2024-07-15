@@ -23,9 +23,9 @@ const Login: React.FC = () => {
   };
 
   return (
-    <div className="bg-bluePrimary w-full h-screen flex items-center justify-center">
+    <div className="bg-gray-300 w-full h-screen flex items-center justify-center">
 
-      <div className='bg-gray-950 rounded-2xl w-[400px] h-[500px] flex flex-col items-center justify-between p-8'>
+      <div className='bg-greenLogo rounded-2xl w-[400px] h-[500px] flex flex-col items-center justify-between p-8'>
         <img alt='logo' src={Logo} className='w-[120px]' />
         <h1 className='font-semibold text-2xl text-white'>Acesse sua Conta</h1>
 
