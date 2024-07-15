@@ -18,7 +18,7 @@ export function SideBar() {
             </div>
 
             {/* Menu Sandwich */}
-            <div className="absolute lg:hidden">
+            <div className=" fixed z-[999] lg:hidden">
                 <div className='flex gap-6'>
                     <button
                     className="flex items-center p-4 text-white"
@@ -44,13 +44,13 @@ export function SideBar() {
                 {isOpen && (
                     <div className="absolute w-[200px] items-center text-center flex flex-col py-8 gap-4 mt-2 bg-white border rounded shadow-xl">
                         <img alt='logo' src={Logo} className='w-[60px]' />
-                        <a href="#home" className="font-medium text-lg hover:text-yellow-custom">
+                        <a href="/add" className="font-medium text-lg hover:text-yellow-custom">
                             Adicionar Tarefas
                         </a>  
-                        <a href="#home" className="font-medium text-lg hover:text-yellow-custom">
+                        <a href="/list" className="font-medium text-lg hover:text-yellow-custom">
                             Lista de Tarefas
                         </a> 
-                        <a href="#home" className="font-medium text-lg hover:text-yellow-custom">
+                        <a href="/" className="font-medium text-lg hover:text-yellow-custom">
                             Sair
                         </a>   
                     </div>

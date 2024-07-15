@@ -1,8 +1,8 @@
-import React from 'react';
 import { useTasks } from './TaskContext';
 
 import Trash from '../assets/trash.png';
 import Edit from '../assets/edit.png';
+import { SideBar } from './SideBar';
 
 export function TaskList() {
   const { tasks, toggleTaskCompletion, editTask, deleteTask } = useTasks();
@@ -10,7 +10,9 @@ export function TaskList() {
   const sortedTasks = [...tasks].sort((a, b) => Number(b.completed) - Number(a.completed));
 
   return (
-    <div className="bg-greenLogo w-full h-screen lg:h-[680px] lg:w-[500px] lg:rounded-2xl p-4 mr-4 justify-start items-center flex flex-col">
+    <>
+    <SideBar />
+    <div id='list' className="bg-greenLogo w-full h-screen lg:h-[680px] lg:w-[500px] lg:rounded-2xl p-4 mr-4 justify-start items-center flex flex-col">
       <h1 className="text-2xl font-semibold text-white">Lista de Tarefas</h1>
       <div className='flex justify-between w-full text-white font-semibold text-sm pb-6 pt-8'>
         <h1>Tarefas</h1>
@@ -65,5 +67,6 @@ export function TaskList() {
         <p className="text-white">Nenhuma tarefa encontrada.</p>
       )}
     </div>
+    </>
   );
 }

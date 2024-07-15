@@ -6,19 +6,18 @@ export function TaskPage() {
 
   return (
     <>
+      {/* Tela cheia */}
       <div className="bg-gray-200 w-full h-screen hidden lg:flex gap-4 items-center justify-between">
         <SideBar />
         <AddTask />
         <TaskList />
       </div>
-      <div className=''>
+
+      {/* Mobile */}
+      <div className='lg:hidden'>
         <SideBar />
         <AddTask />
-        <TaskList />
       </div>
     </>
   );
 };
-
-
-
