@@ -52,7 +52,7 @@ const Login: React.FC = () => {
             />
           </div>
 
-          <button type="submit" className="bg-white hover:bg-gray-200 font-semibold text-greenLogo text-center p-2 w-full rounded-lg mt-2">
+          <button type="submit" className="bg-gray-200 hover:bg-gray-500 font-semibold text-greenLogo text-center p-2 w-full rounded-lg mt-2">
             ACESSAR
           </button>
         </form>
