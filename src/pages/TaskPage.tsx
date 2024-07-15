@@ -17,6 +17,7 @@ export function TaskPage() {
       <div className='lg:hidden'>
         <SideBar />
         <AddTask />
+        <TaskList />
       </div>
     </>
   );

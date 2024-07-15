@@ -18,7 +18,7 @@ export function SideBar() {
             </div>
 
             {/* Menu Sandwich */}
-            <div className=" fixed z-[999] lg:hidden">
+            <div className="absolute z-[999] lg:hidden">
                 <div className='flex gap-6'>
                     <button
                     className="flex items-center p-4 text-white"
