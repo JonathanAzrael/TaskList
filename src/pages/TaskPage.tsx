@@ -6,7 +6,12 @@ export function TaskPage() {
 
   return (
     <>
-      <div className="bg-gray-200 w-full h-screen flex  gap-4 items-center justify-between">
+      <div className="bg-gray-200 w-full h-screen hidden lg:flex gap-4 items-center justify-between">
+        <SideBar />
+        <AddTask />
+        <TaskList />
+      </div>
+      <div className=''>
         <SideBar />
         <AddTask />
         <TaskList />
