@@ -23,15 +23,15 @@ const Login: React.FC = () => {
   };
 
   return (
-    <div className="bg-gray-300 w-full h-screen flex items-center justify-center">
+    <div className="bg-greenLogo w-full h-screen flex items-center justify-center">
 
-      <div className='bg-greenLogo lg:rounded-2xl w-full lg:w-[400px] h-screen lg:h-[500px] flex flex-col items-center justify-center gap-10 p-8'>
+      <div className='bg-gray-200 lg:rounded-2xl w-full lg:w-[400px] h-screen lg:h-[500px] flex flex-col items-center justify-center gap-10 p-8'>
         <img alt='logo' src={Logo} className='w-[120px]' />
-        <h1 className='font-semibold text-2xl text-white'>Acesse sua Conta</h1>
+        <h1 className='font-semibold text-2xl text-gray-900'>Acesse sua Conta</h1>
 
         <form onSubmit={handleSubmit} className='w-[300px] flex flex-col gap-4'>
           <div className="flex flex-col gap-2">
-            <h1 className='font-semibold text-white'>Usuário:</h1>
+            <h1 className='font-semibold text-gray-900'>Usuário:</h1>
             <input
               type="text"
               className="border p-2 w-full rounded-lg"
@@ -42,7 +42,7 @@ const Login: React.FC = () => {
           </div>
 
           <div className="flex flex-col gap-2">
-            <h1 className='font-semibold text-white'>Senha:</h1>
+            <h1 className='font-semibold text-gray-900'>Senha:</h1>
             <input
               type="password"
               className="border p-2 w-full rounded-lg"
@@ -52,7 +52,7 @@ const Login: React.FC = () => {
             />
           </div>
 
-          <button type="submit" className="bg-gray-200 hover:bg-gray-500 font-semibold text-greenLogo text-center p-2 w-full rounded-lg mt-2">
+          <button type="submit" className="bg-greenLogo hover:bg-green-950 font-semibold text-white text-center p-2 w-full rounded-lg mt-2">
             ACESSAR
           </button>
         </form>
