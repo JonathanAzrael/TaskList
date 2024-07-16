@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { Task } from '../types';
 import { useTasks } from './TaskContext';
 import Logo from '../assets/logo.png';
-import { SideBar } from './SideBar';
 
 export function AddTask() {
   const [newTask, setNewTask] = useState('');

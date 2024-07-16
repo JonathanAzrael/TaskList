@@ -2,7 +2,6 @@ import { useTasks } from './TaskContext';
 
 import Trash from '../assets/trash.png';
 import Edit from '../assets/edit.png';
-import { SideBar } from './SideBar';
 
 export function TaskList() {
   const { tasks, toggleTaskCompletion, editTask, deleteTask } = useTasks();
